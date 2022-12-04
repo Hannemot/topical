@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&family=Playfair+Display&family=Poppins:wght@400;500;700&family=Quando&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Plasserer navbaren */
+nav {
+    padding: 3% 5%;
+    align-items: center;
+    text-align: right;
+}
+
+
+/* Styler teksten i navbaren */
+nav a {
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 20px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+}
+
+
+/* Styler hovering-effekt på navbaren */
+a:hover{
+    font-size: large;
+    font-weight: bold;
+    color: rgba(253, 59, 52, 0.949);
+}
+
+
+/* Plasserer headeren */
+.header {
+    display: flex;
+    display: column;
+    padding-bottom: 10%;
+}
+
+/* Bestemmer width på containeren til bildet */
+.left {
+    width: 50%;
+}
+
+
+/* Plasserer bildet */
+.left img {
+    width: 70%;
+    border-radius: 50%;
+    padding-left: 40px;
+}
+
+
+/* Plasserer og styler credit */
+.credit {
+    text-align: left;
+    font-size: 0.8rem;
+    color: rgba(109, 106, 106, 0.982);
+    text-align: left;
+    padding-left: 20%;
+}
+
+
+/* Styler overskriften på headeren */
+.right h1 {
+    padding-top: 40%;
+    font-size: 50px;
+    font-size: 7vw;
+    color: rgba(0, 0, 0, 0.774);
+    font-family: 'poppins';
+}
+
+
+/* Styler ene bokstaven i headeren */
+.color {
+    color: rgba(253, 59, 52, 0.949);
+    font-size: 9vw;
+}
+
+
+/* Styler linja */
+.line {
+border: 2px solid rgba(253, 59, 52, 0.949);
+background: rgba(253, 59, 52, 0.949);
+height: 3px;
+width: 20%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+}
+
+
+/* Styler overskriften under linja */
+.headline h1 {
+text-align: center;
+padding-top: 2%;
+font-size: 3vw;
+text-transform: uppercase;
+font-family: 'poppins';
+font-weight: lighter;
+}
+
+
+/* Plasserer overskriften til paragrafene */
+h1 {
+    text-align: left;
+    padding-bottom: 2%;
+    font-size: 2vw;
+}
+
+
+/* Styler og plasserer paragrafene */
+.text {
+display: flex;
+flex-direction: column;
+padding: 10%;
+padding-top: 3%;
+font-size: 1vw;
+font-family: 'poppins';
+}
+
+
+/* Lager padding under første paragraf */
+.first {
+padding-bottom: 40px;
+}
+
+
+/* Plasserer containeren til bildene */
+.container {
+display: flex;
+flex-direction: row;
+justify-content: center; 
+}
+
+
+/* Plasserer bildene */
+.container img {
+   width: 30%;
+   padding: 20px;
+   padding-bottom: 15%;
+}
+
+.kilder {
+    text-align:  center;
+}
+
+
+/* Gjør så nettsiden ser OK ut på mindre skjermer */
+@media only screen and (max-width: 750px) {
+  
+    p {
+      font-size: 12px;
+    }
+
+@media only screen and (max-width: 768px) {
+html {
+    font-size: 10px;
+ }
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.container img {
+    width: 80%;
+}
+
+.navbar a {
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+.headline h1 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 13px;
+}
+
+}
+}
